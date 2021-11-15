@@ -32,17 +32,17 @@ git clone https://github.com/sk5s/sk5short.git
 cd sk5short
 ```
 
-## gulp
-https://gulpjs.com/
+## vite
+[https://vitejs.dev/](https://vitejs.dev/)
 
 ```bash
-npm install --global gulp-cli
 npm install
+npm run dev
 ```
 
 ## build page
 ```bash
-gulp build
+npm run build
 ```
 
 [![sk5s site](https://upload.cc/i1/2021/10/29/dVn6TN.png)](https://www.sk5s.cyou/)
