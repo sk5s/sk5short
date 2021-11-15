@@ -1,3 +1,9 @@
+import '../css/fontawesome/css/all.min.css'
+import '../css/bulma.min.css'
+import '../css/style.css'
+
+import {modalMessage} from './bulma'
+
 const your_url = document.querySelector('#your_url')
 const your_title = document.querySelector('#your_title')
 const your_description = document.querySelector('#your_description')
@@ -67,7 +73,7 @@ function generate_download_button(data, filename, type) {
   downloadButton.appendChild(a);
   a.click();
   setTimeout(function() {
-    document.body.removeChild(a);
+    downloadButton.removeChild(a);
     window.URL.revokeObjectURL(url);
   }, 100);
 }

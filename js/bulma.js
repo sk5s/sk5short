@@ -18,3 +18,5 @@ function modalMessage(message) {
   message_modal.classList.toggle('is-active')
   message_modal_content.innerHTML = message
 }
+
+export { modalMessage }
