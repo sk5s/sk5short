@@ -14,6 +14,9 @@ const preview_title = document.querySelectorAll('.preview-title')
 const preview_description = document.querySelectorAll('.preview-description')
 const submit_form_button = document.querySelector('#submit_form_button')
 
+const use_website_favicon_button = document.getElementById("use_website_favicon_button")
+const updatepreview_button = document.getElementById("updatepreview_button")
+
 const default_description = 'sk5short | make a short link just in a minutes, use javascript to redirect. | samko5sam'
 const default_title = 'sk5short'
 const default_image = 'https://alsonow.neocities.org/img/alsonow-lite-logo.svg'
@@ -29,6 +32,9 @@ submit_form_button.addEventListener('click',function(e){
 | make a short link just in a minutes, use javascript to redirect.| https://sk5s.github.io/sk5short/ -->${content}`
   generate_download_button(textarea.innerText, 'index.html', 'txt')
 })
+
+use_website_favicon_button.addEventListener("click", use_website_favicon)
+updatepreview_button.addEventListener("click", updatepreview)
 
 function geturlfavicon(url){
   let word = `https://s2.googleusercontent.com/s2/favicons?domain_url=${url}`
