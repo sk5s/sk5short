@@ -11,7 +11,7 @@ sk5short make a short link just in a minutes, use javascript to redirect.
 
 ---
 
-<a href="https://www.sk5s.cyou/sk5short/" target="_blank"><img width="20px" src="https://upload.cc/i1/2021/11/12/p8YxXc.png" alt=""> sk5short web</a>
+<a href="https://sk5s.cyou/sk5short/" target="_blank"><img width="20px" src="https://upload.cc/i1/2021/11/12/p8YxXc.png" alt=""> sk5short web</a>
 
 ---
 
@@ -45,8 +45,8 @@ npm run dev
 npm run build
 ```
 
-[![sk5s site](https://upload.cc/i1/2021/10/29/dVn6TN.png)](https://www.sk5s.cyou/)
-[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://www.sk5s.cyou/)
+[![sk5s site](https://upload.cc/i1/2021/10/29/dVn6TN.png)](https://sk5s.cyou/)
+[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://sk5s.cyou/)
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?style=for-the-badge)](CODE_OF_CONDUCT.md)
 
