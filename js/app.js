@@ -1,6 +1,7 @@
 import '../css/fontawesome/css/all.min.css'
 import '../css/bulma.min.css'
 import '../css/style.css'
+import icon from '/icon/icon.png'
 
 import {modalMessage} from './bulma'
 
@@ -19,7 +20,7 @@ const updatepreview_button = document.getElementById("updatepreview_button")
 
 const default_description = 'sk5short | make a short link just in a minutes, use javascript to redirect. | samko5sam'
 const default_title = 'sk5short'
-const default_image = 'https://alsonow.neocities.org/img/alsonow-lite-logo.svg'
+const default_image = icon
 
 submit_form_button.addEventListener('click',function(e){
   e.preventDefault();
@@ -29,7 +30,7 @@ submit_form_button.addEventListener('click',function(e){
   let textarea = document.getElementById('code_area')
   textarea.innerText = `<!--
 |     sk5short     |
-| make a short link just in a minutes, use javascript to redirect.| https://sk5s.github.io/sk5short/ -->${content}`
+| make a short link just in a minutes, use javascript to redirect.| https://sk5s.cyou/sk5short/ -->${content}`
   generate_download_button(textarea.innerText, 'index.html', 'txt')
 })
 
@@ -37,14 +38,15 @@ use_website_favicon_button.addEventListener("click", use_website_favicon)
 updatepreview_button.addEventListener("click", updatepreview)
 
 function geturlfavicon(url){
-  let word = `https://s2.googleusercontent.com/s2/favicons?domain_url=${url}`
+  // let word = `https://s2.googleusercontent.com/s2/favicons?domain_url=${url}`
+  let word = `https://www.google.com/s2/favicons?domain_url=${url}`
   return word
 }
 function use_website_favicon(){
   if (your_url.value){
     your_image.value = geturlfavicon(your_url.value)
   } else {
-    your_image.value = 'https://alsonow.neocities.org/img/alsonow-lite-logo.svg'
+    your_image.value = icon
   }
   updatepreview()
 }

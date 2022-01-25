@@ -5,9 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="make a short link just in a minutes, use javascript to redirect.">
   <meta name="author" content="samko5sam">
-  <link rel="icon" type="image/png" href="https://alsonow.neocities.org/img/alsonow-lite-logo.svg">
+  <link rel="icon" type="image/png" href="/icon/icon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>sk5short | make a short link just in a minutes, use javascript to redirect. | samko5sam</title>
+  <link rel="preload" href="/icon/icon.png" as="image">
   <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">-->
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css"> -->
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sk5s/fontawesome@5.15.4/css/all.css"> -->
@@ -16,7 +17,8 @@
 <body>
   <nav class="navbar has-background-success-light" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="#">
+      <a class="navbar-item" href="./">
+        <img src="/icon/icon.png" width="30" height="30">
         <span class="title is-5">sk5short</span>
       </a>
 
@@ -30,13 +32,13 @@
     <div id="navbar-burger-item" class="navbar-menu">
       <div class="navbar-start">
 
-        <a class="navbar-item" target="_blank" href="https://www.sk5s.cyou/sk5short/docs">
+        <a class="navbar-item" target="_blank" href="https://sk5s.cyou/sk5short/docs">
           sk5short Docs | 使用文件
         </a>
 
-        <a class="navbar-item" target="_blank" href="https://www.sk5s.cyou/sk5short-desktop/">
+        <!-- <a class="navbar-item" target="_blank" href="https://sk5s.cyou/sk5short-desktop/">
           sk5short desktop | 桌面應用程式
-        </a>
+        </a> -->
 
         <a class="navbar-item" target="_blank" href="https://github.com/sk5s/sk5short-one">
           sk5short one | 單檔案多連結版本
@@ -48,7 +50,7 @@
           </a>
 
           <div class="navbar-dropdown">
-            <a class="navbar-item" target="_blank" href="https://www.sk5s.cyou/alsoweather/">
+            <a class="navbar-item" target="_blank" href="https://sk5s.cyou/alsoweather/">
               alsoweather | 臺灣天氣一把抓
             </a>
             <hr class="navbar-divider">
@@ -74,29 +76,33 @@
     </div>
   </nav>
 
-  <div class="container">
+  <div class="container is-max-widescreen mt-5 mb-5">
     <div class="block">
       <form action="">
         <div class="field">
-          <label for="your_url" class="label is-large uppercase"><i class="fas fa-link"></i>url</label>
+          <label for="your_url" class="label is-large">
+            <!-- <i class="fas fa-link"></i> -->
+            <img src="/icon/icon.png" width="24">
+            Url
+          </label>
           <div class="control">
             <input required class="input is-large is-rounded" type="url" name="url" id="your_url" placeholder="https://...">
           </div>
         </div>
         <div class="field">
-          <label for="your_title" class="label uppercase"><i class="fas fa-align-right"></i>title</label>
+          <label for="your_title" class="label"><i class="fas fa-align-right"></i>Title</label>
           <div class="control">
             <input class="input" type="text" name="title" id="your_title" placeholder="sk5short">
           </div>
         </div>
         <div class="field">
-          <label for="your_description" class="label uppercase"><i class="fas fa-comment-alt"></i>description</label>
+          <label for="your_description" class="label"><i class="fas fa-comment-alt"></i>Description</label>
           <div class="control">
             <textarea class="textarea" name="description" id="your_description" placeholder="sk5short | make a short link just in a minutes, use javascript to redirect. | samko5sam"></textarea>
           </div>
         </div>
         <div class="field">
-          <label for="your_locale" class="label uppercase"><i class="fas fa-map-marker-alt"></i>locale</label>
+          <label for="your_locale" class="label"><i class="fas fa-map-marker-alt"></i>Locale</label>
           <div class="control">
             <div class="select">
               <select name="locale" id="your_locale">
@@ -108,7 +114,7 @@
           </div>
         </div>
         <div class="field">
-          <label for="your_type" class="label uppercase"><i class="fas fa-photo-video"></i>type</label>
+          <label for="your_type" class="label"><i class="fas fa-photo-video"></i>Type</label>
           <div class="control">
             <div class="select">
               <select name="type" id="your_type">
@@ -119,19 +125,19 @@
           </div>
         </div>
         <div class="field">
-          <label for="your_image" class="label uppercase"><i class="fas fa-images"></i>image</label>
+          <label for="your_image" class="label"><i class="fas fa-images"></i>Image</label>
           <div class="control">
             <input class="input" type="url" name="image" id="your_image" placeholder="https://...">
           </div>
-          <p class="help uppercase">enter a link of image</p>
+          <p class="help">Enter a link of image</p>
         </div>
         <div class="field is-grouped is-grouped-right">
           <div class="control">
-            <a id="use_website_favicon_button" class="button is-info uppercase">use website favicon</a>
+            <a id="use_website_favicon_button" class="button is-info">Use website favicon</a>
           </div>
         </div>
         <div class="field">
-          <label for="your_site_name" class="label uppercase"><i class="fas fa-file-signature"></i>site name</label>
+          <label for="your_site_name" class="label"><i class="fas fa-file-signature"></i>Site name</label>
           <div class="control">
             <input class="input" type="text" name="site_name" id="your_site_name" placeholder="sk5short">
           </div>
@@ -147,42 +153,42 @@
       </form>
     </div>
     <div class="block">
-      <h1 class="title is-3 uppercase">preview</h1>
+      <h1 class="title is-3">Preview</h1>
       <div id="preview-div">
-        <div class="card has-background-success-light" style="max-width: 500px;">
+        <div class="card has-background-success-light mt-5 mb-5" style="max-width: 500px;">
           <div class="card-image">
-            <figure class="image is-4by3">
-              <img class="preview-image" src="https://alsonow.neocities.org/img/alsonow-lite-logo.svg" alt="">
+            <figure class="image is-1by1">
+              <img class="preview-image" src="/icon/icon.png" alt="">
             </figure>
           </div>
           <div class="card-content">
             <div class="media">
               <div class="media-left">
-                <h1 class="title is-3 preview-title">preview title</h1>
+                <h1 class="title is-3 preview-title">Preview title</h1>
               </div>
             </div>
 
             <div class="content">
-              <p class="preview-description">preview description</p>
+              <p class="preview-description">Preview description</p>
             </div>
           </div>
         </div>
 
-        <div class="card" style="max-width: 400px; background: #42d888;">
+        <div class="card mt-5 mb-5" style="max-width: 400px; background: #42d888;">
           <div class="card-content">
             <div class="media">
               <div class="media-left">
-                <h1 class="title is-5 preview-title">preview title</h1>
+                <h1 class="title is-5 preview-title">Preview title</h1>
               </div>
               <div class="media-left" style="position: absolute;right: 0;">
                 <figure class="image is-64x64">
-                  <img class="preview-image" src="https://alsonow.neocities.org/img/alsonow-lite-logo.svg" alt="">
+                  <img class="preview-image" style="min-width: 32;" src="/icon/icon.png" alt="">
                 </figure>
               </div>
             </div>
 
             <div class="content">
-              <p class="preview-description">preview description</p>
+              <p class="preview-description">Preview description</p>
             </div>
           </div>
         </div>
@@ -190,7 +196,7 @@
     </div>
 
     <div class="block" id="docs">
-      <h1 class="title is-3">how to use</h1>
+      <h1 class="title is-3">How to use</h1>
       <p>Enter all parameters and submit.</p>
 
       <hr>
@@ -211,7 +217,7 @@
 
       </section>
       <footer class="modal-card-foot">
-        <button class="message_modal_close_button button is-success is-outlined uppercase">close</button>
+        <button class="message_modal_close_button button is-success is-outlined">Close</button>
         <span id="download_button"></span>
       </footer>
     </div>
