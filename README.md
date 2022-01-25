@@ -31,7 +31,7 @@
   </a>
 
 <h3 align="center">sk5short</h3>
-  <div align="center"><small> Icons made by <a href="https://www.flaticon.com/authors/dinosoftlabs" title="DinosoftLabs"> DinosoftLabs </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></small></div>
+  <div align="center"><small> Icons made by <a href="https://www.flaticon.com/authors/dinosoftlabs" title="DinosoftLabs"> DinosoftLabs </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></small></div>
 
   <p align="center">
     sk5short make a short link just in a minutes, use javascript to redirect.
