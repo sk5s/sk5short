@@ -39,7 +39,7 @@
     <a href="https://github.com/sk5s/sk5short"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/sk5s/sk5short">View Demo</a>
+    <a href="https://sk5s.cyou/sk5short/">Web app</a>
     ·
     <a href="https://github.com/sk5s/sk5short/issues">Report Bug</a>
     ·
@@ -81,7 +81,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://sk5s.cyou/sk5short/)
 
 sk5short make a short link just in a minutes, use javascript to redirect.
 
