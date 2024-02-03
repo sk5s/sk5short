@@ -1,7 +1,5 @@
 * **Start using**
-  * [quick start](quickstart.md)
-  * [guide](guide.md)
-* **video**
-  * [video](video.md)
-* **example**
-  * [example](example.md)
+  * [Quick start](quickstart.md)
+  * [Guide](guide.md)
+* **Video**
+  * [Video](video.md)
